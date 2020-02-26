@@ -2,7 +2,7 @@
 
 
 
-body {background-color: #FFFF99;
+body {background-color: #1D1D1C;
 	
 }
 
@@ -17,9 +17,7 @@ img { max-width: 100%}
 
 /*Style for header specifies top margin, background color, rounded corners, and center-aligns content */
 
-header { background-color: #FFFFFF;
-		margin-top: 0.2em;
-		border-radius: 0.5em;
+header { 
 		text-align: center;
 		
 }
@@ -30,6 +28,7 @@ nav{ 	font-family: Georgia, "Times New Roman", serif;
 		font-size: 1.25em;
 		font-weight: bold;
 		text-align: center;
+		margin-top: -1.5em;
 	
 }
 
@@ -44,7 +43,7 @@ nav ul{ padding: 0;
 and applies margins and padding for list items within the navigation*/
 
 nav li{ 
-		background-color: #009933;
+		background-color: #9D9D93;
 		border-radius: 2em;
 		list-style-type: none;
 		margin: 0.3em;
@@ -73,22 +72,38 @@ main{ 	display: block;
 		font-family: Verdana, Arial, sans-serif;
 		font-size: 1em;
 		margin-top: 0.5em;
-		margin-bottom: 10px;
 		padding: 1em;
-		border-radius: 1em;
-		border-top: solid 0.2em #009933;
-		border-bottom: solid 0.2em #009933;
+		border-radius: 2em 0 2em 0;
+		opacity: 0.85;
 		
 		
 }
+
+/*Style for anchor elements within the main element*/
+
+main a{ background-color: #9D9D93;
+		border-radius: 1em;
+		color: #FFFFFF;
+		font-weight: bold;
+		padding: 0.5em;
+		text-decoration: none;
+}
+
 
 /* Style for the footer specifies font size, text alignment, and top margin */
 	
 footer{	font-size: .70em;
 		text-align: center;
 		margin-top: 2em;
+		color: #FFFFFF
 
-}	
+}
+
+/* Style for anchor elements within the footer element*/	
+footer a {
+		color: #FFFFFF;
+		text-decoration: none;
+}
 
 /* Style hides the tablet class */
 
@@ -97,6 +112,12 @@ footer{	font-size: .70em;
 /* Style rule specifies to not display the equip class */
 
 .equip{ display: none;}
+
+/* Style for aside element*/
+
+aside {
+		font-style: italic;
+}
 
 /* Media query for tablet viewport targets screen size with a minimum width of 481px. */
 
@@ -113,6 +134,9 @@ nav li {
 	padding-right: 0;
 	width: 18%;
 	white-space: nowrap;
+	border-radius: 0;
+	background-color: transparent;
+	
 }
 
 /* Style specifies clear and top margin properties for the main element */
@@ -120,7 +144,9 @@ nav li {
 main {
 	
 	clear: left;
-	margin-top: 4em;
+	margin-top: -0.3em;
+	border-radius:0;
+	overflow: auto;
 	
 	
 }	
@@ -151,7 +177,7 @@ main {
 .items {
 	display: block;
 	list-style-position: inside;
-	margin-bottom: 5em
+	
 }
 
 /* Style specifies to display the tablet class*/
@@ -159,8 +185,11 @@ main {
 .tablet {
 	
 	display: block;
+	margin-top: -3em;
+	margin-bottom: -1em;
 	
 }
+
 
 /* Style specifies a font weight and top margin for description list terms*/ 
 
@@ -170,7 +199,115 @@ dt{
 
 }
 
+/*Style for h1 element*/
+
+h1{
+	text-align: center;
+}
+
+	/* Style for images within the figure element */
+	
+figure img {
+	background-color: #1D1D1C;
+	display: inline;
+	height: 8em;
+	width: 28%;
+	margin: 1%;
+	padding: 1%;
+}
+	/* Style for anchor elements withing the figure element*/
+	
+figure a {
+	background-color: transparent;
+	padding: 0;
+	text-decoration: none;
+}
+
+/*Style specifies bottom padding for the section element*/
+
+section {
+	padding-bottom: 3em;
+}
+
+/*Style for h1 element within the section element*/
+
+section h1 {
+	text-align: left;
+}
+
+/*Style for anchor element within the section element*/
+section a{
+	background-color: transparent;
+	color: #1D1D1C;
+	font-weight: normal;
+	padding: 0;
+	text-decoration: underline;
+}
+
+/*Style for contact class*/
+
+.contact {
+	background-color: transparent;
+	color: #1D1D1C;
+	padding: 0;
+	text-decoration: underline;
+}
+/* Style for article element*/
+
+article {
+	background-color: #C1D9CA;
+	float: left;
+	margin: 0.5%;
+	padding: 0.5%;
+	text-align: center;
+	width: 31%;
 }	
+
+/*Style for image element contained within the main article element*/
+
+main article img {
+	border: solid 0.1em #1D1D1C;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Style for paragraph element contained within the main article element*/
+
+main article p {
+	color: #000000;
+	margin-top: 2%;
+	padding: 1%;
+	text-align: left;
+}	
+
+/* Style for unordered list element contained within the main article element*/
+
+main article ul {
+	text-align: left;
+}
+
+/*Style for aside element*/
+
+aside {
+	background-color: #FFFFFF;
+	border-radius: 0 5em 5em 5em;
+	box-shadow: 1em 1em 1em #4C4F4D;
+	padding: 1.5em;
+	margin: 1em;
+}	
+
+/* Style for main article h2 element*/
+
+main article h2 {
+	color: #000000;
+}
+
+	
+
+		
+}
+
+	
 
 /* Media query for desktop viewport targets screens with a minimum width of 769px. */
 	
@@ -178,9 +315,22 @@ dt{
 
 	#container {
 		
-		width: 80%;
-		
-	}
+		background-color: #1D1D1C;
+}
+	/* Style to left align header*/
+	
+header {
+		text-align: left;
+}
+
+nav{
+
+		float: right;
+		margin-top: -7em;
+		margin-right: 3em;
+		margin-bottom: 0;
+		width: 65%;
+}
 	
 /* Style specifies margin and padding for the unordered list within the nav */	
 
@@ -196,22 +346,20 @@ nav ul {
 
 
 nav li{
-		
-		
 		margin-left: 0;
 		margin-right: 0;
+		width: 20%;		
 		padding: 0;
-		border-radius: 0;
-		border-top: solid #000000;
-		border-bottom: solid #000000;
-		width: 20%;	
+		
+		
 }
 
 /* Style for navigation links specifies display and padding*/		
 
-nav lia{
+nav li a{
 	display: inline-block;
 	padding: .07em;
+	text-shadow: 0.2em 0.1em #3D3D35;
 	
 }
 
@@ -223,13 +371,13 @@ nav li a:link{
 }	
 
 nav li a:visited {
-		color: #FFFF99;
+		color: #CCCCFF;
 	
 }	
 
 nav li a:hover {
 	
-		color: #FFFF00;
+		color: #9D9D93;
 		font-style: italic;
 }		
 
@@ -237,20 +385,14 @@ nav li a:hover {
 
 body{
 	
-	background: -moz-linear-gradient(#FFFFFF, #FFFF99); /* Firefox */
-	background: -o-linear-gradient(#FFFFFF, #FFFF99); /* Opera */
-	background: -webkit-linear-gradient(#FFFFFF, #FFFF99); /* Chrome, Safari */
-	background: linear-gradient(#FFFFFF, #FFFF99);
-	background-attachment: fixed;
+		background-color: #FFFFFF;
 }	
 	
 /* Style specifies border, shadow, margin, and padding element*/
 
 main { 
-		border-bottom-style: none;
-		box-shadow: 0.5em 0.5em 0.5em #404040;
-		margin-bottom: 1em;
-		margin-top: 1em;
+		background-color: #1D1D1C;
+		
 		
 }
 
@@ -258,10 +400,51 @@ main {
 
 main p{
 	
-		padding-left: 0.5em;
-		padding-right: 0.5em;
+		color:#FFFFFF;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
 		
 }
+
+/*Style for main h2 element*/
+
+main h2 {
+		color: #FFFFFF;
+}
+
+/*Style for contact class*/
+
+.contact {
+		color: #FFFFFF;
+}		
+
+/* Style applies color to h1 element */
+
+h1 { 
+	color: #FFFFFF
+}
+
+/*Style applies height and opacity to images within figure element*/
+
+figure img{
+		height: 15em;
+		opacity: 0.7;
+}
+
+/* Style remove transparency on hover*/
+
+figure img:hover {
+		opacity: 1;
+}		
+
+/*Style specifies a background color, margin, and padding for footer element*/
+
+footer {
+		background-color: #2A2A2A;
+		margin-top: -0.2em;
+		padding: 2em;
+}		
 
 /* Style specifies a bottom margin for the items class*/
 
@@ -269,6 +452,24 @@ main p{
 		margin-bottom: 6em;
 }
 
+/*Style specifies color and left margin for the section element*/
 
+section {
+		color: #FFFFFF;
+		margin-left: 1em;
+		padding-bottom: 5em;
+}
+
+/*Style for anchor element within the section element*/
+
+section a {
+		color: #FFFFFF;
+}
+
+/* Style for paragraph within the section element*/
+
+section p {
+		margin-left: 0;
+}		
 
 }
