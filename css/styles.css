@@ -119,6 +119,34 @@ aside {
 		font-style: italic;
 }
 
+/* Style rule for input, select, and textarea form elements */
+
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+/* Style rule for label element */
+
+label {
+	display: block;
+}
+
+/* Style rule for unordered list within a form */
+
+form ul {
+	list-style-type: none; 
+}
+
+/* Style rule for chkbx class */
+
+.chkbx {
+	display: inline-block;
+}
+
+
+	
+
 /* Media query for tablet viewport targets screen size with a minimum width of 481px. */
 
 @media only screen and (min-width: 660px) {
@@ -302,9 +330,55 @@ main article h2 {
 	color: #000000;
 }
 
+	/* Style for table element */
 	
+table {
+	border: 0.1em solid #000000;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
 
-		
+/* Style specifies border and padding for the th and td elements */
+
+th, td {
+	border: 0.1em solid #000000;
+	padding: 1em;
+}
+
+/* Style for the th element */
+
+th {
+	background-color: #1D1D1C;
+	color: #FFFFFF;
+}
+
+/* Style for caption element */
+
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+/* Style rule for label element */
+
+label {
+	float: left;
+	padding-right: 0.5em;
+	text-align: right; 
+	width: 10em;
+}
+
+/* Style rule for btn class */
+
+.btn {
+	margin-left: 12em;
+}
+
+
+	
 }
 
 	
@@ -471,5 +545,33 @@ section a {
 section p {
 		margin-left: 0;
 }		
+
+/* Style for table element */
+
+table {
+		background-color: #FFFFFF;
+		width: 85%;
+}
+
+/* Style for caption element */
+
+caption {
+		color: #FFFFFF;
+}
+
+/* Style rule for form element */
+
+form {
+	background-color: #FFFFFF;
+	padding: 1em;
+}
+
+/* Style rule for  paragraph with form element */
+
+form p {
+	color: #000000;
+}
+
+
 
 }
